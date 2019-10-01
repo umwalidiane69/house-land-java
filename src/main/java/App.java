@@ -1,7 +1,6 @@
 import static spark.Spark.*;
 import java.util.HashMap;
 import spark.template.handlebars.HandlebarsTemplateEngine;
-import java.util.List;
 import java.util.Map;
 import spark.ModelAndView;
 
