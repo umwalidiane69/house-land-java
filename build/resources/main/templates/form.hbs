@@ -1,9 +1,13 @@
-        <form action="/photo/new" method="post">
+       {{#partial "content"}}
+
+        <div id="how">
+        <p id="boy">Fill this Form</p>
+        <form class="well" action="/photo/new" method="post">
             <div class="form-group">
                 <label for="name"> Name</label><br>
-                <input type="text"  placeholder="Enter your full name" name="name">
+                <input style="color:black" type="text"  placeholder="Enter your full name" name="name">
             </div>
-            <div class="form-group">
+            <div  class="form-group">
                             <label for="email">Email</label><br>
                             <input type="text"  placeholder="Enter Your Email" name="email">
              </div>
@@ -19,4 +23,30 @@
                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
                </div>
          </form>
+         <br></br><br><br></br><br>
+
 </div>
+<style>
+.well{
+background-color:black;
+color:white;
+opacity:0.7;
+border-radius:15px;
+/*
+background-image:url("/image/background.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+ */
+width:600px;
+height:600px;
+text-align:center;
+margin-left:35%;
+}
+input {padding: 18px;
+         border-radius: 12px;
+         font-family: 'Bad Script', cursive;}
+
+</style>
+
+  {{/partial}}
+                    {{>layout.hbs}}
